@@ -4,18 +4,10 @@ $message = "";
 if (isset($_GET['error'])) {
   if ($_GET['error'] == "login") {
     $message = "
-      <div class='toast d-flex align-items-center text-white bg-primary border-0' role='alert' aria-live='assertive' aria-atomic='true'>
-        <div class='toast-body'>
-          User or Email incorrect.
-        </div>
-      </div>";
+    <div class='p-3 mb-2 bg-primary text-white'>Incorrect e-mail or password</div>";
   } else if ($_GET['error'] == "session") {
     $message = "
-      <div class='toast d-flex align-items-center text-white bg-primary border-0' role='alert' aria-live='assertive' aria-atomic='true'>
-        <div class='toast-body'>
-          Your session has expired.
-        </div>
-      </div>";
+    <div class='p-3 mb-2 bg-primary text-white'>Your session has expired!.</div>";
   }
 }
 ?>
