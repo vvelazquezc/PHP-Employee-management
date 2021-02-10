@@ -29,11 +29,11 @@ if (isset($_GET['error'])) {
   <form action="./src/library/loginController.php" method="post">
     <div class="mb-3">
       <label for="uEmail" class="form-label">Email address</label>
-      <input type="email" class="form-control" id="uEmail" name="uEmail" aria-describedby="emailHelp" value="admin@assemblerschool.com">
+      <input type="email" class="form-control" id="uEmail" name="uEmail" aria-describedby="emailHelp" required value="admin@assemblerschool.com">
     </div>
     <div class="mb-3">
       <label for="uPassword" class="form-label">Password</label>
-      <input type="password" class="form-control" id="uPassword" name="uPassword">
+      <input type="password" class="form-control" id="uPassword" name="uPassword" required>
       <!-- TODO: eliminar los values de los input password e input email. -->
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
