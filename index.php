@@ -20,24 +20,27 @@ if (isset($_GET['error'])) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Employee management V1</title>
   <link rel="stylesheet" href="assets/css/login.css">
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  
 </head>
 
-<body>
-  <h1>LOG IN</h1>
-  <?= $message ?>
-  <form action="./src/library/loginController.php" method="post">
-    <div class="mb-3">
-      <label for="uEmail" class="form-label">Email address</label>
-      <input type="email" class="form-control" id="uEmail" name="uEmail" aria-describedby="emailHelp" required value="admin@assemblerschool.com">
-    </div>
-    <div class="mb-3">
-      <label for="uPassword" class="form-label">Password</label>
-      <input type="password" class="form-control" id="uPassword" name="uPassword" required>
-      <!-- TODO: eliminar los values de los input password e input email. -->
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
+<?= $message ?>
+<body class="text-center">
+  <main class="form-signin">
+    <form action="./src/library/loginController.php" method="post">
+      <img class="mb-4" src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+      <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+      <label for="uEmail" class="visually-hidden">Email address</label>
+      <input type="email" id="uEmail" name="uEmail" class="form-control" aria-describedby="emailHelp" required value="admin@assemblerschool.com">
+      <label for="uPassword" class="visually-hidden">Password</label>
+      <input type="password" id="uPassword" class="form-control" placeholder="Password" name="uPassword" required>
+      <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+    </form>
+  </main>
+
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
