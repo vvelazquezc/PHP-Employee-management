@@ -10,4 +10,8 @@ if (isset($_POST['uEmail']) && isset($_POST['uPassword'])) {
     $head = "Refresh: 0.2; URL=../../index.php?error=login";
     header($head);
   }
+} else if (isset($_GET['logout'])) {
+  logOut();
+  $head = "Refresh: 0; URL=../../index.php?logout";
+  header($head);
 }

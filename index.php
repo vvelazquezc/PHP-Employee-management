@@ -3,12 +3,12 @@
 $message = "";
 if (isset($_GET['error'])) {
   if ($_GET['error'] == "login") {
-    $message = "
-    <div class='p-3 mb-2 bg-primary text-white'>Incorrect e-mail or password</div>";
+    $message = "<div class='p-3 mb-2 bg-primary text-white'>Incorrect e-mail or password</div>";
   } else if ($_GET['error'] == "session") {
-    $message = "
-    <div class='p-3 mb-2 bg-primary text-white'>Your session has expired!.</div>";
+    $message = "<div class='p-3 mb-2 bg-primary text-white'>Your session has expired!.</div>";
   }
+} else if (isset($_GET['logout'])) {
+  $message = "<div class='p-3 mb-2 bg-primary text-white'>Logout correctly!.</div>";
 }
 ?>
 <!DOCTYPE html>
