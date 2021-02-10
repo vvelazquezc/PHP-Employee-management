@@ -22,10 +22,11 @@ if (isset($_GET['error'])) {
   <link rel="stylesheet" href="assets/css/login.css">
   <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
-  
+
 </head>
 
 <?= $message ?>
+
 <body class="text-center">
   <main class="form-signin">
     <form action="./src/library/loginController.php" method="post">
@@ -40,6 +41,7 @@ if (isset($_GET['error'])) {
   </main>
 
   <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./node_modules/popper.js/dist/popper.min.js"></script>
   <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
