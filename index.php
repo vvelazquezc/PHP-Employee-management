@@ -30,7 +30,7 @@ if (isset($_GET['error'])) {
 <body class="text-center">
   <main class="form-signin">
     <form action="./src/library/loginController.php" method="post">
-      <img class="mb-4" src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+      <img class="mb-4" src="./assets/images/logo_AS.jpeg" alt="" width="72" height="57">
       <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
       <label for="uEmail" class="visually-hidden">Email address</label>
       <input type="email" id="uEmail" name="uEmail" class="form-control" aria-describedby="emailHelp" required value="admin@assemblerschool.com">
@@ -41,7 +41,6 @@ if (isset($_GET['error'])) {
   </main>
 
   <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="./node_modules/popper.js/dist/popper.min.js"></script>
   <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
