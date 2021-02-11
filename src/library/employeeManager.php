@@ -45,3 +45,9 @@ function getNextIdentifier(array $employeesCollection): int
 {
 // TODO implement it
 }
+
+
+function getAllEmployees(){
+    $json_employees = file_get_contents("../../resources/employees.json");
+    return $json_employees;
+}

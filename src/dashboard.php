@@ -21,6 +21,7 @@ if (isset($_SESSION["id"])) {
   <link rel="stylesheet" href="../assets/css/main.css">
   <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../node_modules/jsgrid/dist/jsgrid.min.css"></link>
   <title>Dashborad</title>
 </head>
 
@@ -36,6 +37,7 @@ if (isset($_SESSION["id"])) {
   <script src="../node_modules/jquery/dist/jquery.min.js"></script>
   <script src="../node_modules/popper.js/dist/popper.min.js"></script>
   <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="../node_modules/jsgrid/dist/jsgrid.min.js"></script>
   <script src="../assets/js/index.js" type="module"></script>
 </body>
 
