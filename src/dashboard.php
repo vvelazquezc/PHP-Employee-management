@@ -2,16 +2,15 @@
 
 session_start();
 
-if (isset($_SESSION["id"])){
+if (isset($_SESSION["id"])) {
   require("./library/sessionHelper.php");
-}else{
+} else {
   header("Refresh: 0; URL=../index.php?error=session");
   exit();
 }
 
 ?>
 
-<!-- TODO Main view or Employees Grid View here is where you get when logged here there's the grid of employees -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,7 +36,7 @@ if (isset($_SESSION["id"])){
   <script src="../node_modules/jquery/dist/jquery.min.js"></script>
   <script src="../node_modules/popper.js/dist/popper.min.js"></script>
   <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="../assets/js/index.js"></script>
+  <script src="../assets/js/index.js" type="module"></script>
 </body>
 
 </html>

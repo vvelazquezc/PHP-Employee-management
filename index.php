@@ -1,4 +1,4 @@
-<!-- TODO Application entry point. Login view -->
+<!-- Application entry point. Login view -->
 <?php
 $message = "";
 if (isset($_GET['error'])) {
