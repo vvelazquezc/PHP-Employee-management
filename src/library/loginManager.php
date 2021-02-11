@@ -20,7 +20,7 @@ function saveSesion($user)
   $_SESSION['email'] = $user['email'];
   $_SESSION['name'] = $user['name'];
   $_SESSION['init'] = time();
-  $_SESSION['life'] = 600;
+  $_SESSION['life'] = 6000000000;
 }
 
 function logOut()

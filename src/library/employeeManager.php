@@ -24,9 +24,28 @@ function updateEmployee(array $updateEmployee)
 }
 
 
-function getEmployee(string $id)
+function getEmployee($id)
 {
-// TODO implement it
+
+    $employees = json_decode(getAllEmployees(), true);
+    foreach($employees as $employee) {
+        if ($employee['id'] == $id) {
+            $result = array(
+                ['name'] => $employee['name'],
+                ['lastName'] => $employee['lastName'],
+                ['email'] => $employee['email'],
+                ['gender'] => $employee['gender'],
+                ['city'] => $employee['city'],
+                ['streetAddress'] => $employee['streetAddress'],
+                ['state'] => $employee['state'],
+                ['age'] => $employee['age'],
+                ['postalCode'] => $employee['postalCode'],
+                ['phoneNumber'] => $employee['phoneNumber']
+            );
+        }
+    }
+
+    return $result;
 }
 
 
