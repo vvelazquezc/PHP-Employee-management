@@ -20,7 +20,7 @@ function saveSesion($user)
   $_SESSION['email'] = $user['email'];
   $_SESSION['name'] = $user['name'];
   $_SESSION['init'] = time();
-  $_SESSION['life'] = 6000000000;
+  $_SESSION['life'] = 60000000000; //TODO: change to 600 before proyect ending.
 }
 
 function logOut()
