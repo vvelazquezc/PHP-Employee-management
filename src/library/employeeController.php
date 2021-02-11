@@ -8,6 +8,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
 
         if (isset($_REQUEST['employeeList'])) {
 
+            header('Content-Type: application/json');
             echo getAllEmployees();
         }
 }

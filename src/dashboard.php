@@ -21,7 +21,8 @@ if (isset($_SESSION["id"])) {
   <link rel="stylesheet" href="../assets/css/main.css">
   <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="../node_modules/jsgrid/dist/jsgrid.min.css"></link>
+  <link rel="stylesheet" href="../node_modules/jsgrid/css/theme.css"></link>
+  <link rel="stylesheet" href="../node_modules/jsgrid/css/jsgrid.css"></link>
   <title>Dashborad</title>
 </head>
 
@@ -29,7 +30,8 @@ if (isset($_SESSION["id"])) {
   <?php
   require("../assets/html/header.html");
   ?>
-  <section id="mainContent"></section>
+  <main id="main-wrapper"></main>
+
   <?php
   require("../assets/html/footer.html");
   ?>
