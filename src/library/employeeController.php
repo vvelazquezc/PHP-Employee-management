@@ -9,4 +9,13 @@ switch ($_SERVER['REQUEST_METHOD']) {
     } else if (isset($_REQUEST['employeeId'])) {
       $employee = getEmployee($_GET['employeeId']);
     }
+    break;
+  case "POST":
+    break;
+  case "PUT":
+    break;
+  case "PATCH":
+    break;
+  case "DELETE":
+    break;
 }

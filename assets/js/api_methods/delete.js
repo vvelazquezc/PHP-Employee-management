@@ -1,9 +1,9 @@
-export const get = {
+export const deleteMethod = {
   url: function (pathToSend, data) {
     const request = {
       url: pathToSend,
       data: data,
-      type: 'GET',
+      type: 'DELETE',
     };
 
     return $.ajax(request);

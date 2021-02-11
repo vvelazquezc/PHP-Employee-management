@@ -13,9 +13,21 @@ function addEmployee(array $newEmployee)
 }
 
 
-function deleteEmployee(string $id)
+function deleteEmployee($id)
 {
-  // TODO implement it
+  $data = json_decode(file_get_contents("../../resources/employees.json"), true);
+  for ($i = 0; $i < count($data); $i++) {
+    if ($data[$i]['id'] == $id) {
+      $position = $i;
+    }
+  }
+  unset($data[$position]);
+  $data = array_values($data);
+  for ($i = 0; $i < count($data); $i++) {
+    $data[$i]['id'] = $i + 1;
+  }
+  $data = json_encode($data, JSON_PRETTY_PRINT);
+  file_put_contents('users.json', $data); //TODO change path
 }
 
 
@@ -45,14 +57,15 @@ function removeAvatar($id)
 }
 
 
-function getQueryStringParameters(): array
+function getQueryStringParameters()
 {
-  // TODO implement it
+  parse_str(file_get_contents("php://input"), $query);
+  return $query;
 }
 
-function getNextIdentifier(array $employeesCollection): int
+function getNextIdentifier($employeesCollection)
 {
-  // TODO implement it
+  return count($employeesCollection) + 1;
 }
 
 

@@ -4,7 +4,7 @@ export const helpers = {
       width: '100%',
       height: '800px',
       inserting: true,
-      editing: false,
+      editing: true,
       sorting: true,
       paging: true,
       datatype: 'json',
