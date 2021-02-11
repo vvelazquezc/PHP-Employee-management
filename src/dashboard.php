@@ -9,14 +9,15 @@ if (isset($_SESSION["id"])) {
   exit();
 }
 
-  require("../assets/html/header.html");
+require("../assets/html/header.html");
 
 ?>
 
-  <main id="main-wrapper"></main>
+<main id="main-wrapper"></main>
 
 <?php require("../assets/html/footer.html"); ?>
 
 <script src="../assets/js/index.js" type="module"></script>
 </body>
+
 </html>

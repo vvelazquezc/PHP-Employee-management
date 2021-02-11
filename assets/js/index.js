@@ -1,3 +1,3 @@
-import { actions } from "./actions/actions.js";
+import { actions } from './actions/actions.js';
 
 $(actions.init);
