@@ -14,4 +14,8 @@ if (isset($_POST['uEmail']) && isset($_POST['uPassword'])) {
   logOut();
   $head = "Refresh: 0; URL=../../index.php?logout";
   header($head);
+} else if (isset($_GET['timeout'])) {
+  logOut();
+  $head = "Refresh: 0; URL=../../index.php?error=session";
+  header($head);
 }
