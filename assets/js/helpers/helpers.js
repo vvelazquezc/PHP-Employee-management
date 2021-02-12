@@ -1,4 +1,5 @@
 import { deleteMethod } from '../api_methods/delete.js';
+import { postMethod } from '../api_methods/post.js';
 
 export const helpers = {
   grid: function (employeeList) {
@@ -14,8 +15,10 @@ export const helpers = {
       data: employeeList,
 
       onItemDeleting: function (args) {
-        console.log(args.item.id);
         deleteMethod.url('../src/library/employeeController.php', args.item.id);
+      },
+      onItemInserting: function (args) {
+        postMethod.url('../src/library/employeeController.php', args.item);
       },
       rowClick: function (args) {
         window.location.href = `employee.php?employeeId=${args.item.id}`;

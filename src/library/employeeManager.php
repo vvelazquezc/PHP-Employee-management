@@ -7,9 +7,14 @@
  * @date: 11/06/2020
  */
 
-function addEmployee(array $newEmployee)
+function addEmployee($newEmployee)
 {
-  // TODO implement it
+  $employeesCollection = json_decode(file_get_contents("../../resources/employees.json"), true);
+  $new_id = getNextIdentifier($employeesCollection);
+  $newEmployee['id'] = strval($new_id);
+  $employeesCollection[$new_id - 1] = $newEmployee;
+  $data = json_encode($employeesCollection, JSON_PRETTY_PRINT);
+  file_put_contents('users.json', $data);
 }
 
 

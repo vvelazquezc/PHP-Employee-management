@@ -11,6 +11,8 @@ switch ($_SERVER['REQUEST_METHOD']) {
     }
     break;
   case "POST":
+    $query = getQueryStringParameters();
+    addEmployee($query);
     break;
   case "PUT":
     break;
