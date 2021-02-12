@@ -25,10 +25,10 @@ function deleteEmployee($id)
       $position = $i;
     }
   }
-  array_slice($data, $position, 1);
-  
+  unset($data[$position]);
+  $data = array_values($data);
   $data = json_encode($data, JSON_PRETTY_PRINT);
-  file_put_contents('users.json', $data); //TODO change path
+  file_put_contents("../../resources/employees.json", $data);
 }
 
 
@@ -66,7 +66,7 @@ function getQueryStringParameters()
 
 function getNextIdentifier($employeesCollection)
 {
-  return $employeesCollection[count($employeesCollection)-1]['id'] +1;
+  return $employeesCollection[count($employeesCollection) - 1]['id'] + 1;
 }
 
 
