@@ -1,26 +1,36 @@
 <?php
 
 require('employeeManager.php');
+
+if(isset($_REQUEST['_method'])) {
+  $_SERVER['REQUEST_METHOD'] = $_REQUEST['_method'];
+  array_splice($_REQUEST, array_search('_method', array_keys($_REQUEST)), 1);
+}
+
 switch ($_SERVER['REQUEST_METHOD']) {
 
   case "GET":
     if (isset($_REQUEST['employeeList'])) {
       header('Content-Type: application/json');
       echo getAllEmployees();
-    } else if (isset($_REQUEST['employeeId'])) {
+    }
+    if (isset($_REQUEST['employeeId'])) {
       $employee = getEmployee($_GET['employeeId']);
     }
     break;
 
   case "POST":
-    header('Content-Type: application/json');
     $_REQUEST['id'] = getNextIdentifier(json_decode(getAllEmployees(), true));
-    isset($_REQUEST['lastName']) ? $_REQUEST['lastName'] : $_REQUEST['lastName'] = "";
-    isset($_REQUEST['gender']) ? $_REQUEST['gender'] : $_REQUEST['gender'] = "";
-    addEmployee($_REQUEST);
+
     if (isset($_REQUEST['employeePage'])) {
-      header('Location: dashboard.php');
+      array_splice($_REQUEST, array_search('employeePage', array_keys($_REQUEST)), 1);
+      addEmployee($_REQUEST);
+      header('Location: ../dashboard.php');
+      exit; //PREGUNTAR JOSE
     } else {
+      $_REQUEST['lastName'] = "";
+      $_REQUEST['gender'] = "";
+      addEmployee($_REQUEST);
       header('Content-Type: application/json');
       echo json_encode($_REQUEST['id']);
     }
@@ -30,11 +40,13 @@ switch ($_SERVER['REQUEST_METHOD']) {
     header('Content-Type: application/json');
     $query = getQueryStringParameters();
     if (isset($query['employeePage'])) {
-      unset($query['employeePage']);
-      $query = array_values($query);
       updateEmployee($query);
+      header('Location: ../dashboard.php');
+      exit;
     } else {
       updateEmployee($query);
+      header('Content-Type: application/json');
+      echo json_encode($_REQUEST['id']); //Por qué esto?
     }
     break;
 

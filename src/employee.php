@@ -15,7 +15,8 @@ require("../assets/html/header.html");
 <section id="form-wrapper">
   <div class="col-md-7 col-lg-8">
     <h4 class="mb-3">Billing address</h4>
-    <form class="needs-validation" action="./library/employeeController.php" method="<?= isset($employee) ? "PUT" : "POST" ?>">
+    <form class="needs-validation" action="./library/employeeController.php" method="POST">
+    <input type="hidden" name="_method" value="<?= isset($employee) ? "PUT" : "POST" ?>">
       <div class="row g-3">
         <div class="col-sm-6">
           <label for="uName" class="form-label">First name</label>
@@ -77,7 +78,7 @@ require("../assets/html/header.html");
       </div>
       <input type="hidden" name="id" value="<?= isset($employee) ? $employee['id'] : '' ?>" >
 
-      <input type="submit" value="<?= isset($employee) ? 'Update' : 'Create' ?>" name="employeePage">
+      <input type="submit" class="w-30 btn btn-primary" value="<?= isset($employee) ? 'Update' : 'Create' ?>" name="employeePage">
       <a class="w-30 btn btn-primary" href="./dashboard.php">Go Back</a>
     </form>
   </div>
