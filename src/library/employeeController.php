@@ -44,8 +44,6 @@ switch ($_SERVER['REQUEST_METHOD']) {
       exit;
     } else {
       updateEmployee($query);
-      header('Content-Type: application/json');
-      echo json_encode($_REQUEST['id']); //Por qué esto?
     }
     break;
 

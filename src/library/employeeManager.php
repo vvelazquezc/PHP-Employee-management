@@ -33,8 +33,8 @@ function deleteEmployee($id)
 
 function updateEmployee($updateEmployee)
 {
-
   $data = json_decode(file_get_contents("../../resources/employees.json"), true);
+
   for ($i = 0; $i < count($data); $i++) {
     if ($data[$i]['id'] == $updateEmployee['id']) {
       $position = $i;

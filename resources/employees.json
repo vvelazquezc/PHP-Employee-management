@@ -1,11 +1,11 @@
 [
     {
         "id": "1",
-        "name": "Rackff",
+        "name": "Rack",
         "lastName": "Leiff",
         "email": "jackon@network.com",
         "gender": "man",
-        "city": "fffSan Jone",
+        "city": "San Jone",
         "streetAddress": "126",
         "state": "CA",
         "age": "24",

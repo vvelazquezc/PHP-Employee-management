@@ -1,5 +1,6 @@
 import { deleteMethod } from '../api_methods/delete.js';
 import { postMethod } from '../api_methods/post.js';
+import { putMethod } from '../api_methods/put.js';
 
 export const helpers = {
   grid: function (employeeList) {
@@ -25,6 +26,10 @@ export const helpers = {
                 args.item.lastName = '';
                 args.item.gender = '';
                 });
+      },
+      onItemUpdating: function (args) {
+        putMethod
+          .url('../src/library/employeeController.php', args.item)
       },
       rowClick: function (args) {
         window.location.href = `employee.php?employeeId=${args.item.id}`;
