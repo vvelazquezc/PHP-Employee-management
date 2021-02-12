@@ -30,6 +30,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
     } else {
       $_REQUEST['lastName'] = "";
       $_REQUEST['gender'] = "";
+      $_REQUEST['avatar'] = "../assets/images/no-user.png";
       addEmployee($_REQUEST);
       header('Content-Type: application/json');
       echo json_encode($_REQUEST['id']);

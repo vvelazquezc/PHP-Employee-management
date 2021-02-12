@@ -5,12 +5,13 @@
         "lastName": "Leiff",
         "email": "jackon@network.com",
         "gender": "man",
-        "city": "San Jone",
+        "city": "San Jose",
         "streetAddress": "126",
         "state": "CA",
         "age": "24",
         "postalCode": "394221",
-        "phoneNumber": "7383627627"
+        "phoneNumber": "7383627627",
+        "avatar": "../assets/images/no-user.png"
     },
     {
         "id": "2",
@@ -23,7 +24,8 @@
         "state": "WA",
         "age": "34",
         "postalCode": "09889",
-        "phoneNumber": "1283645645"
+        "phoneNumber": "1283645645",
+        "avatar": "../assets/images/no-user.png"
     },
     {
         "id": "3",
@@ -36,7 +38,8 @@
         "state": "CA",
         "age": "29",
         "postalCode": "098765",
-        "phoneNumber": "9983632461"
+        "phoneNumber": "9983632461",
+        "avatar": "../assets/images/no-user.png"
     },
     {
         "id": "4",
@@ -49,7 +52,8 @@
         "city": "Salt lake city",
         "state": "UT",
         "postalCode": "457320",
-        "phoneNumber": "90876987654"
+        "phoneNumber": "90876987654",
+        "avatar": "../assets/images/no-user.png"
     },
     {
         "id": "5",
@@ -62,7 +66,8 @@
         "city": "Louisville",
         "state": "KNT",
         "postalCode": "445321",
-        "phoneNumber": "224355488976"
+        "phoneNumber": "224355488976",
+        "avatar": "../assets/images/no-user.png"
     },
     {
         "id": "6",
@@ -75,7 +80,8 @@
         "city": "Atlanta",
         "state": "GEO",
         "postalCode": "394221",
-        "phoneNumber": "6854634522"
+        "phoneNumber": "6854634522",
+        "avatar": "../assets/images/no-user.png"
     },
     {
         "id": "7",
@@ -88,7 +94,8 @@
         "city": "Nashville",
         "state": "TN",
         "postalCode": "90143",
-        "phoneNumber": "45372788192"
+        "phoneNumber": "45372788192",
+        "avatar": "../assets/images/no-user.png"
     },
     {
         "id": "8",
@@ -101,7 +108,8 @@
         "city": "New Orleans",
         "state": "LU",
         "postalCode": "63281",
-        "phoneNumber": "91232876454"
+        "phoneNumber": "91232876454",
+        "avatar": "../assets/images/no-user.png"
     },
     {
         "name": "manolo",
@@ -114,19 +122,8 @@
         "phoneNumber": "666666666",
         "id": 9,
         "lastName": "",
-        "gender": ""
-    },
-    {
-        "name": "a",
-        "email": "a",
-        "age": "1",
-        "streetAddress": "a",
-        "city": "a",
-        "state": "a",
-        "postalCode": "1",
-        "phoneNumber": "1",
-        "id": 10,
-        "lastName": "",
-        "gender": ""
+        "gender": "",
+        "avatar": "../assets/images/no-user.png"
     }
+
 ]
