@@ -34,16 +34,23 @@ function deleteEmployee($id)
 
 function updateEmployee(array $updateEmployee)
 {
-  // TODO implement it
+
+  $data = json_decode(file_get_contents("../../resources/employees.json"), true);
+  foreach ($data as $employee) {
+    if ($employee['id'] == $updateEmployee['id']) {
+      $employee = $updateEmployee;
+    }
+  }
+  $data = json_encode($data, JSON_PRETTY_PRINT);
+  file_put_contents("../../resources/employees.json", $data);
 }
 
 
 function getEmployee($id)
 {
 
-  $employees_json = file_get_contents("../resources/employees.json");
-  $employees_array = json_decode($employees_json, true);
-  foreach ($employees_array as $employee) {
+  $data = json_decode(file_get_contents("../../resources/employees.json"), true);
+  foreach ($data as $employee) {
     if ($employee['id'] == $id) {
       $result = $employee;
     }
@@ -54,7 +61,7 @@ function getEmployee($id)
 
 function removeAvatar($id)
 {
-  // TODO implement it
+  // TODO: implement it
 }
 
 

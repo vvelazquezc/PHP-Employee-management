@@ -75,7 +75,7 @@ require("../assets/html/header.html");
           <input type="number" class="form-control" id="uPhoneNumber" name="phoneNumber" required value="<?= isset($employee) ? $employee['phoneNumber'] : '' ?>">
         </div>
       </div>
-
+      <input type="hidden" name="id" value="<?= isset($employee) ? $employee['id'] : '' ?>" >
 
       <input type="submit" value="<?= isset($employee) ? 'Update' : 'Create' ?>" name="employeePage">
       <a class="w-30 btn btn-primary" href="./dashboard.php">Go Back</a>
