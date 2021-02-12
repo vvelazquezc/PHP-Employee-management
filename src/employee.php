@@ -77,7 +77,7 @@ require("../assets/html/header.html");
       </div>
 
 
-      <button class="w-30 btn btn-primary" type="submit"><?= isset($employee) ? "Save" : "Create" ?></button>
+      <input type="submit" value="<?= isset($employee) ? 'Update' : 'Create' ?>" name="employeePage">
       <a class="w-30 btn btn-primary" href="./dashboard.php">Go Back</a>
     </form>
   </div>
