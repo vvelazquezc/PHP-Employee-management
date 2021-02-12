@@ -37,7 +37,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
     break;
 
   case "PUT":
-    $query = isset($parameters) ? $parameters : getQueryStringParameters();
+    $query = getQueryStringParameters();
     if (isset($query['employeePage'])) {
       updateEmployee($query);
       header('Location: ../dashboard.php');
