@@ -13,8 +13,9 @@ require("./library/employeeController.php");
 require("../assets/html/header.html");
 ?>
 <section id="form-wrapper">
+  <img src="<?= isset($employee) ? $employee['avatar'] : "" ?>" class="img_avatar" alt="avatar">
   <div class="col-md-7 col-lg-8">
-    <h4 class="mb-3">Billing address</h4>
+    <h4 class="mb-3"><?= isset($employee) ? $employee['name'] : '' ?>'s profile</h4>
     <form class="needs-validation" action="./library/employeeController.php" method="POST">
     <input type="hidden" name="_method" value="<?= isset($employee) ? "PUT" : "POST" ?>">
       <div class="row g-3">
