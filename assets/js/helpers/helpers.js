@@ -18,7 +18,9 @@ export const helpers = {
         deleteMethod.url('../src/library/employeeController.php', args.item.id);
       },
       onItemInserting: function (args) {
-        postMethod.url('../src/library/employeeController.php', args.item);
+        postMethod
+          .url('../src/library/employeeController.php', args.item)
+          .done(data => (args.item.id = data));
       },
       rowClick: function (args) {
         window.location.href = `employee.php?employeeId=${args.item.id}`;
