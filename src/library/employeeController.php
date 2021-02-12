@@ -11,8 +11,13 @@ switch ($_SERVER['REQUEST_METHOD']) {
     }
     break;
   case "POST":
-    $query = getQueryStringParameters();
-    addEmployee($query);
+    // $query = getQueryStringParameters();
+    $_REQUEST['id'] = getNextIdentifier(json_decode(getAllEmployees(), true));
+    isset($_REQUEST['lastName'])? $_REQUEST['lastName'] : $_REQUEST['lastName'] = "";
+    isset($_REQUEST['gender'])? $_REQUEST['gender'] : $_REQUEST['gender'] = "";
+
+    addEmployee($_REQUEST);
+    echo $_REQUEST['id'];
     break;
   case "PUT":
     break;

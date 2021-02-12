@@ -9,12 +9,11 @@
 
 function addEmployee($newEmployee)
 {
-  $employeesCollection = json_decode(file_get_contents("../../resources/employees.json"), true);
-  $new_id = getNextIdentifier($employeesCollection);
-  $newEmployee['id'] = strval($new_id);
-  $employeesCollection[$new_id - 1] = $newEmployee;
-  $data = json_encode($employeesCollection, JSON_PRETTY_PRINT);
-  file_put_contents('users.json', $data);
+
+  $data = json_decode(file_get_contents("../../resources/employees.json"), true);
+  array_push($data, $newEmployee);
+  $updated_data = json_encode($data, JSON_PRETTY_PRINT);
+  file_put_contents('../../resources/employees.json"', $updated_data);
 }
 
 
@@ -26,11 +25,8 @@ function deleteEmployee($id)
       $position = $i;
     }
   }
-  unset($data[$position]);
-  $data = array_values($data);
-  for ($i = 0; $i < count($data); $i++) {
-    $data[$i]['id'] = $i + 1;
-  }
+  array_slice($data, $position, 1);
+  
   $data = json_encode($data, JSON_PRETTY_PRINT);
   file_put_contents('users.json', $data); //TODO change path
 }
@@ -70,7 +66,7 @@ function getQueryStringParameters()
 
 function getNextIdentifier($employeesCollection)
 {
-  return count($employeesCollection) + 1;
+  return $employeesCollection[count($employeesCollection)-1]['id'] +1;
 }
 
 
