@@ -1,3 +1,5 @@
+import { deleteMethod } from '../api_methods/delete.js';
+
 export const helpers = {
   grid: function (employeeList) {
     return {
@@ -10,6 +12,15 @@ export const helpers = {
       datatype: 'json',
       deleteConfirm: 'Do you really want to delete the client?',
       data: employeeList,
+
+      onItemDeleting: function (args) {
+        console.log(args.item.id);
+        deleteMethod.url('../src/library/employeeController.php', args.item.id);
+      },
+      rowClick: function (args) {
+        window.location.href = `employee.php?employeeId=${args.item.id}`;
+      },
+
       fields: [
         {
           name: 'name',

@@ -17,5 +17,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
   case "PATCH":
     break;
   case "DELETE":
+    $query = getQueryStringParameters();
+    deleteEmployee($query['data']);
     break;
 }
