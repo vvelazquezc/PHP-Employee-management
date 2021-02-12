@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "34cb35cf-5e35-4c75-abef-71ef389b5033",
+		"name": "EMPLOYEE MANAGER",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "API Image with a limit",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-API-KEY",
+						"value": "177AEE4B-C5854FEC-AEB8531D-318C0073",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://uifaces.co/api?limit=10",
+					"protocol": "https",
+					"host": [
+						"uifaces",
+						"co"
+					],
+					"path": [
+						"api"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All the images",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-API-KEY",
+						"value": "177AEE4B-C5854FEC-AEB8531D-318C0073",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://uifaces.co/api",
+					"protocol": "https",
+					"host": [
+						"uifaces",
+						"co"
+					],
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
