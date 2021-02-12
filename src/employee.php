@@ -41,7 +41,7 @@ require("../assets/html/header.html");
             <option value="man" <?= isset($employee) ? ($employee['gender'] == "man" ? "selected" : "") : '' ?>>Man</option>
             <option value="woman" <?= isset($employee) ? ($employee['gender'] == "woman" ? "selected" : "") : '' ?>>Woman</option>
             <option value="nobinary" <?= isset($employee) ? ($employee['gender'] == "nobinary" ? "selected" : "") : '' ?>>No binary</option>
-            <option value="" <?= isset($employee) ? ($employee['gender'] == "" ? "selected" : "") : '' ?>></option>
+            <option value="" <?= isset($employee) ? ($employee['gender'] == "" ? "selected" : "") : 'selected' ?>>Select a option</option>
           </select>
         </div>
 
