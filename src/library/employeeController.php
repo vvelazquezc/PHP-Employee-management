@@ -11,11 +11,12 @@ switch ($_SERVER['REQUEST_METHOD']) {
     }
     break;
   case "POST":
+    header('Content-Type: application/json');
     $_REQUEST['id'] = getNextIdentifier(json_decode(getAllEmployees(), true));
     isset($_REQUEST['lastName']) ? $_REQUEST['lastName'] : $_REQUEST['lastName'] = "";
     isset($_REQUEST['gender']) ? $_REQUEST['gender'] : $_REQUEST['gender'] = "";
     addEmployee($_REQUEST);
-    echo $_REQUEST['id'];
+    echo json_encode($_REQUEST['id']);
     break;
   case "PUT":
     break;
