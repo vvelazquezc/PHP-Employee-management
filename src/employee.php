@@ -15,7 +15,7 @@ require("../assets/html/header.html");
 <section id="form-wrapper">
   <div class="col-md-7 col-lg-8">
     <h4 class="mb-3">Billing address</h4>
-    <form class="needs-validation" novalidate="">
+    <form class="needs-validation" action="./library/employeeController.php" method="<?= isset($employee) ? "PUT" : "POST" ?>">
       <div class="row g-3">
         <div class="col-sm-6">
           <label for="uName" class="form-label">First name</label>
@@ -77,7 +77,7 @@ require("../assets/html/header.html");
       </div>
 
 
-      <button class="w-30 btn btn-primary" type="submit">Save</button>
+      <button class="w-30 btn btn-primary" type="submit"><?= isset($employee) ? "Save" : "Create" ?></button>
       <a class="w-30 btn btn-primary" href="./dashboard.php">Go Back</a>
     </form>
   </div>
