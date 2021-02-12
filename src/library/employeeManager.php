@@ -31,7 +31,7 @@ function deleteEmployee($id)
 }
 
 
-function updateEmployee(array $updateEmployee)
+function updateEmployee($updateEmployee)
 {
 
   $data = json_decode(file_get_contents("../../resources/employees.json"), true);
@@ -57,7 +57,7 @@ function updateEmployee(array $updateEmployee)
 function getEmployee($id)
 {
 
-  $data = json_decode(file_get_contents("../../resources/employees.json"), true);
+  $data = json_decode(file_get_contents("../resources/employees.json"), true);
   foreach ($data as $employee) {
     if ($employee['id'] == $id) {
       $result = $employee;

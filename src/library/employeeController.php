@@ -37,8 +37,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
     break;
 
   case "PUT":
-    header('Content-Type: application/json');
-    $query = getQueryStringParameters();
+    $query = isset($parameters) ? $parameters : getQueryStringParameters();
     if (isset($query['employeePage'])) {
       updateEmployee($query);
       header('Location: ../dashboard.php');

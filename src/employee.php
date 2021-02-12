@@ -53,7 +53,7 @@ require("../assets/html/header.html");
 
         <div class="col-md-6">
           <label for="uAddress" class="form-label">Street Address</label>
-          <input type="text" class="form-control" id="uAddress" name="address" required value="<?= isset($employee) ? $employee['streetAddress'] : '' ?>">
+          <input type="text" class="form-control" id="uAddress" name="streetAddress" required value="<?= isset($employee) ? $employee['streetAddress'] : '' ?>">
         </div>
 
         <div class="col-md-6">
