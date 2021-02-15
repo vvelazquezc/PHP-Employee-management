@@ -9,7 +9,6 @@ if (isset($_SESSION["id"])) {
 }
 
 require("./library/employeeController.php");
-require("./library/avatarsApi.php");
 
 require("../assets/html/header.html");
 ?>
@@ -17,15 +16,7 @@ require("../assets/html/header.html");
   <div class="container overflow-hidden">
     <form class="needs-validation" action="./library/employeeController.php" method="POST">
     <div class="container_avatar">
-    <?php
-      $counter = 1;
-      foreach ($result as $avatar) {
-      echo '<label class="label-avatar" for="avatar' . $counter .'">
-              <input type="radio" id="avatar' . $counter .'" name="avatar" value="' . urldecode($avatar['photo']) . '">
-              <img class="img_avatar" src="' . urldecode($avatar['photo']) . '" alt="avatar' . $counter . '">
-            </label>';
-      $counter ++;
-    }?>
+      <?php require("./imageGallery.php"); ?>
     </div>
     <img src="<?= isset($employee) ? $employee['avatar'] : "../assets/images/no-user.png" ?>" class="img_profile" alt="avatar">
     <h4 class="mb-3"><?= isset($employee) ? $employee['name'] . "'s profile" : "New employee" ?></h4>
