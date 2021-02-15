@@ -18,7 +18,7 @@ if (isset($_GET['error'])) {
 
 </head>
 
-<?= isset($message) ? "<div class='p-3 mb-2 bg-primary text-white'>$message</div>" : "" ?>
+<?= isset($message) ? "<div class='p-3 bg-correctly-ass text-white'>$message</div>" : "" ?>
 
 <body class="text-center h-100">
   <main class="login-ass">
