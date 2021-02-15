@@ -22,6 +22,7 @@ if (isset($employee)) {
 
     if (isset($employee['avatar'])) {
         $result = uifacesRequest($employee['age'], $gender, 7);
+        array_push($result, array("photo"=> $employee['avatar']));
     } else {
         $result = uifacesRequest($employee['age'], $gender);
     }

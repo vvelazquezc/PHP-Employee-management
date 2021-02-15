@@ -41,6 +41,7 @@ function updateEmployee($updateEmployee)
     }
   }
   $data[$position]['name'] = $updateEmployee['name'];
+  $data[$position]['avatar'] = $updateEmployee['avatar'];
   $data[$position]['lastName'] = $updateEmployee['lastName'];
   $data[$position]['age'] = $updateEmployee['age'];
   $data[$position]['email'] = $updateEmployee['email'];

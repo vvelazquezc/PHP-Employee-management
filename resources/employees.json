@@ -11,7 +11,7 @@
         "age": "24",
         "postalCode": "394221",
         "phoneNumber": "7383627627",
-        "avatar": "../assets/images/no-user.png"
+        "avatar": "https:\/\/i.imgur.com\/p4RS9FZ.jpg"
     },
     {
         "id": "2",
@@ -25,7 +25,7 @@
         "age": "34",
         "postalCode": "09889",
         "phoneNumber": "1283645645",
-        "avatar": "../assets/images/no-user.png"
+        "avatar": "..\/assets\/images\/no-user.png"
     },
     {
         "id": "3",
@@ -39,7 +39,7 @@
         "age": "29",
         "postalCode": "098765",
         "phoneNumber": "9983632461",
-        "avatar": "../assets/images/no-user.png"
+        "avatar": "..\/assets\/images\/no-user.png"
     },
     {
         "id": "4",
@@ -53,7 +53,7 @@
         "state": "UT",
         "postalCode": "457320",
         "phoneNumber": "90876987654",
-        "avatar": "../assets/images/no-user.png"
+        "avatar": "..\/assets\/images\/no-user.png"
     },
     {
         "id": "5",
@@ -67,7 +67,7 @@
         "state": "KNT",
         "postalCode": "445321",
         "phoneNumber": "224355488976",
-        "avatar": "../assets/images/no-user.png"
+        "avatar": "..\/assets\/images\/no-user.png"
     },
     {
         "id": "6",
@@ -81,7 +81,7 @@
         "state": "GEO",
         "postalCode": "394221",
         "phoneNumber": "6854634522",
-        "avatar": "../assets/images/no-user.png"
+        "avatar": "..\/assets\/images\/no-user.png"
     },
     {
         "id": "7",
@@ -95,7 +95,7 @@
         "state": "TN",
         "postalCode": "90143",
         "phoneNumber": "45372788192",
-        "avatar": "../assets/images/no-user.png"
+        "avatar": "..\/assets\/images\/no-user.png"
     },
     {
         "id": "8",
@@ -109,7 +109,7 @@
         "state": "LU",
         "postalCode": "63281",
         "phoneNumber": "91232876454",
-        "avatar": "../assets/images/no-user.png"
+        "avatar": "..\/assets\/images\/no-user.png"
     },
     {
         "name": "manolo",
@@ -123,7 +123,6 @@
         "id": 9,
         "lastName": "",
         "gender": "",
-        "avatar": "../assets/images/no-user.png"
+        "avatar": "..\/assets\/images\/no-user.png"
     }
-
 ]
