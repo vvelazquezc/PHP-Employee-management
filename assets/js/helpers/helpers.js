@@ -6,7 +6,7 @@ export const helpers = {
   grid: function (employeeList) {
     return {
       width: '100%',
-      height: '800px',
+      height: 'auto',
       inserting: true,
       editing: true,
       sorting: true,
