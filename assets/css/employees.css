@@ -1,8 +1,19 @@
 .img_avatar {
     width: 75px;
+    height: 75px;
     margin: 20px;
+    object-fit: cover;
 }
 .label-avatar {
     width: 75px;
     height: 75px;
+}
+
+.img_profile {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.container_avatar {
+    height: 150px;
 }
