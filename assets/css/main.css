@@ -1,2 +1,22 @@
 @import "employees.css";
 
+.nav-ass {
+    height: 75px;
+    background: white;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar-logo-ass img {
+    width: auto;
+    padding: 0 20px;
+}
+.btn-ass {
+    color: #AE4926;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+.footer-ass {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+}

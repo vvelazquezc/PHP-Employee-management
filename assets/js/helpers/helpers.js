@@ -79,7 +79,7 @@ export const helpers = {
           align: 'center',
         },
         {
-          name: 'postalCode',
+          name: 'PC',
           type: 'number',
           width: 70,
           validate: 'required',

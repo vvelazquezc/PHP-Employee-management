@@ -9,7 +9,7 @@
         "streetAddress": "126",
         "state": "CA",
         "age": "24",
-        "postalCode": "394221",
+        "PC": "394221",
         "phoneNumber": "7383627627",
         "avatar": "https:\/\/i.imgur.com\/p4RS9FZ.jpg"
     },
@@ -23,7 +23,7 @@
         "streetAddress": "89",
         "state": "WA",
         "age": "34",
-        "postalCode": "09889",
+        "PC": "09889",
         "phoneNumber": "1283645645",
         "avatar": "..\/assets\/images\/no-user.png"
     },
@@ -37,7 +37,7 @@
         "streetAddress": "55",
         "state": "CA",
         "age": "29",
-        "postalCode": "098765",
+        "PC": "098765",
         "phoneNumber": "9983632461",
         "avatar": "..\/assets\/images\/no-user.png"
     },
@@ -51,7 +51,7 @@
         "streetAddress": "90",
         "city": "Salt lake city",
         "state": "UT",
-        "postalCode": "457320",
+        "PC": "457320",
         "phoneNumber": "90876987654",
         "avatar": "..\/assets\/images\/no-user.png"
     },
@@ -65,7 +65,7 @@
         "streetAddress": "43",
         "city": "Louisville",
         "state": "KNT",
-        "postalCode": "445321",
+        "PC": "445321",
         "phoneNumber": "224355488976",
         "avatar": "..\/assets\/images\/no-user.png"
     },
@@ -79,7 +79,7 @@
         "streetAddress": "128",
         "city": "Atlanta",
         "state": "GEO",
-        "postalCode": "394221",
+        "PC": "394221",
         "phoneNumber": "6854634522",
         "avatar": "..\/assets\/images\/no-user.png"
     },
@@ -93,7 +93,7 @@
         "streetAddress": "1",
         "city": "Nashville",
         "state": "TN",
-        "postalCode": "90143",
+        "PC": "90143",
         "phoneNumber": "45372788192",
         "avatar": "..\/assets\/images\/no-user.png"
     },
@@ -107,7 +107,7 @@
         "streetAddress": "126",
         "city": "New Orleans",
         "state": "LU",
-        "postalCode": "63281",
+        "PC": "63281",
         "phoneNumber": "91232876454",
         "avatar": "..\/assets\/images\/no-user.png"
     },
@@ -118,7 +118,7 @@
         "streetAddress": "manolo",
         "city": "manolo",
         "state": "MN",
-        "postalCode": "33333",
+        "PC": "33333",
         "phoneNumber": "666666666",
         "id": 9,
         "lastName": "",

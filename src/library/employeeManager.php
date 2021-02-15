@@ -49,7 +49,7 @@ function updateEmployee($updateEmployee)
   $data[$position]['streetAddress'] = $updateEmployee['streetAddress'];
   $data[$position]['city'] = $updateEmployee['city'];
   $data[$position]['state'] = $updateEmployee['state'];
-  $data[$position]['postalCode'] = $updateEmployee['postalCode'];
+  $data[$position]['PC'] = $updateEmployee['PC'];
   $data[$position]['phoneNumber'] = $updateEmployee['phoneNumber'];
   $data = json_encode($data, JSON_PRETTY_PRINT);
   file_put_contents("../../resources/employees.json", $data);

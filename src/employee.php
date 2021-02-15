@@ -77,8 +77,8 @@ require("../assets/html/header.html");
         </div>
 
         <div class="col-md-6 p-2">
-          <label for="uPostalCode" class="form-label">Postal Code</label>
-          <input type="number" class="form-control" id="uPostalCode" name="postalCode" required value="<?= isset($employee) ? $employee['postalCode'] : '' ?>">
+          <label for="uPC" class="form-label">Postal Code</label>
+          <input type="number" class="form-control" id="uPC" name="PC" required value="<?= isset($employee) ? $employee['PC'] : '' ?>">
         </div>
 
         <div class="col-md-6 p-2">
