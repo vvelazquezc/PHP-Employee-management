@@ -10,12 +10,12 @@ if(isset($_REQUEST['_method'])) {
 switch ($_SERVER['REQUEST_METHOD']) {
 
   case "GET":
+    if (isset($_REQUEST['employeeId'])) {
+      $employee = getEmployee($_GET['employeeId']);
+    }
     if (isset($_REQUEST['employeeList'])) {
       header('Content-Type: application/json');
       echo getAllEmployees();
-    }
-    if (isset($_REQUEST['employeeId'])) {
-      $employee = getEmployee($_GET['employeeId']);
     }
     break;
 

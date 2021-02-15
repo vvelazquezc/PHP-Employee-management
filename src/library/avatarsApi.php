@@ -1,18 +1,8 @@
 <?php
-
-if (isset($employee)) {
-    if (isset($employee['avatar'])) {
-    
-    }
-} else {
-    $result = uifacesRequest();
-}
-
-function uifacesRequest($limit = 8, $age = false, $gender = false)
+function uifacesRequest($age = false, $gender = false, $limit = 8)
 {
-    $partial_url = $gender ? "&gender=$gender&from_age=" . ($age-5) . "&to_age=" . ($age+5) : "";
-    $url = "https://uifaces.co/api?limit=$limit" . $partial_url;
-    echo $url;
+    $partial_url = $gender ? "&gender[]=$gender&from_age=" . ($age-5) . "&to_age=" . ($age+10) : "";
+    $url = "https://uifaces.co/api?limit=$limit$partial_url";
     $ch = curl_init($url);
 
     curl_setopt($ch, CURLOPT_HTTPHEADER, array(
@@ -25,4 +15,16 @@ function uifacesRequest($limit = 8, $age = false, $gender = false)
     curl_close($ch);
 
    return json_decode($result, true);
+}
+
+if (isset($employee)) {
+    $gender = $employee['gender'] == 'man' ? 'male' : ($employee['gender'] == "woman" ? "female" : "");
+
+    if (isset($employee['avatar'])) {
+        $result = uifacesRequest($employee['age'], $gender, 7);
+    } else {
+        $result = uifacesRequest($employee['age'], $gender);
+    }
+} else {
+    $result = uifacesRequest();
 }

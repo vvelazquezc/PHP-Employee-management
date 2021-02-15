@@ -14,7 +14,7 @@ require("./library/avatarsApi.php");
 require("../assets/html/header.html");
 ?>
 <section id="form-wrapper">
-  <img src="<?= isset($employee) ? $employee['avatar'] : "" ?>" class="img_avatar" alt="avatar">
+  <!-- <img src="isset($employee) ? $employee['avatar'] : "" ?>" class="img_avatar" alt="avatar"> -->
   <div class="container overflow-hidden">
     <h4 class="mb-3"><?= isset($employee) ? $employee['name'] : '' ?>'s profile</h4>
     <form class="needs-validation" action="./library/employeeController.php" method="POST">
@@ -22,9 +22,9 @@ require("../assets/html/header.html");
       $counter = 1;
       foreach ($result as $avatar) {
       echo '<label class="label-avatar" for="avatar' . $counter .'">
-              <img class="img_avatar" src="' . $avatar['photo'] . '" alt="avatar' . $counter . '">
+              <img class="img_avatar" src="' . urldecode($avatar['photo']) . '" alt="avatar' . $counter . '">
             </label>
-            <input type="radio" id="avatar' . $counter .'" name="avatar" value="' . $avatar['photo'] . '">';
+            <input type="radio" id="avatar' . $counter .'" name="avatar" value="' . urldecode($avatar['photo']) . '">';
       $counter ++;
     }?>
     <input type="hidden" name="_method" value="<?= isset($employee) ? "PUT" : "POST" ?>">
