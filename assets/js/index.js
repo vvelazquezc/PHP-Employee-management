@@ -6,4 +6,5 @@ getMethod
   .then(data => {
     $('#main-wrapper').jsGrid(helpers.grid(data));
     $('.input_avatar').last().prop('checked',true);
+
   });
