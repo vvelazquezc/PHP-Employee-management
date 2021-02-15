@@ -1,4 +1,8 @@
 .img_avatar {
-    width: 200px;
+    width: 75px;
     margin: 20px;
+}
+.label-avatar {
+    width: 75px;
+    height: 75px;
 }

@@ -26,7 +26,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
       array_splice($_REQUEST, array_search('employeePage', array_keys($_REQUEST)), 1);
       addEmployee($_REQUEST);
       header('Location: ../dashboard.php');
-      exit; //PREGUNTAR JOSE
+      exit;
     } else {
       $_REQUEST['lastName'] = "";
       $_REQUEST['gender'] = "";
