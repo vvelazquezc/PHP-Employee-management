@@ -79,8 +79,8 @@ require("../assets/html/header.html");
       </div>
       <input type="hidden" name="id" value="<?= isset($employee) ? $employee['id'] : '' ?>" >
 
-      <input type="submit" class="w-30 btn btn-primary" value="<?= isset($employee) ? 'Update' : 'Create' ?>" name="employeePage">
-      <a class="w-30 btn btn-primary" href="./dashboard.php">Go Back</a>
+      <input type="submit" class="w-30 btn btn-dark mt-5 mr-3" value="<?= isset($employee) ? 'Update' : 'Create' ?>" name="employeePage">
+      <a class="w-30 btn btn-dark mt-5" href="./dashboard.php">Go Back</a>
     </form>
   </div>
 </section>

@@ -18,7 +18,15 @@ if (isset($_GET['error'])) {
 
 </head>
 
-<?= isset($message) ? "<div class='p-3 bg-correctly-ass text-white'>$message</div>" : "" ?>
+
+<?= isset($message) ? "
+<div class='toast' role='alert' aria-live='assertive' aria-atomic='true'>
+  <div class='toast-body'>
+    $message
+  </div>
+</div>" : "" ?>
+
+
 
 <body class="text-center h-100">
   <main class="login-ass">
@@ -36,3 +44,10 @@ if (isset($_GET['error'])) {
 </body>
 
 </html>
+
+<script>
+  $(".toast").toast({
+    delay: 3000
+  });
+  $(".toast").toast('show');
+</script>
