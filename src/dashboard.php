@@ -13,7 +13,14 @@ require("../assets/html/header.html");
 
 ?>
 
-<main id="main-wrapper"></main>
+<main id="main-wrapper">
+<?= isset($message) ? "
+<div class='toast' role='alert' aria-live='assertive' aria-atomic='true'>
+  <div class='toast-body'>
+    $message
+  </div>
+</div>" : "" ?>
+</main>
 
 <?php require("../assets/html/footer.html"); ?>
 
