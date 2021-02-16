@@ -19,17 +19,19 @@ if (isset($_GET['error'])) {
 </head>
 
 
+
+
+
+
+<body class="text-center h-100">
+
+<main class="login-ass">
 <?= isset($message) ? "
 <div class='toast' role='alert' aria-live='assertive' aria-atomic='true'>
   <div class='toast-body'>
     $message
   </div>
 </div>" : "" ?>
-
-
-
-<body class="text-center h-100">
-  <main class="login-ass">
     <form class="form-signin" action="./src/library/loginController.php" method="post">
       <img class="" src="./assets/images/logo_AS2.png" alt="" width="72" height="57">
       <h1 class="h3 mb-3 fw-normal">Please sign in</h1>

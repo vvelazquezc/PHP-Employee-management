@@ -23,3 +23,9 @@
 .bg-correctly-ass {
   background-color: #ae4826e4;
 }
+
+.toast {
+  position: absolute;
+  top: 25px;
+  margin: 0 auto;
+}
