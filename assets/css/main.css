@@ -1,42 +1,42 @@
-@import "employees.css";
-@import "login.css";
+@import 'employees.css';
+@import 'login.css';
 
 .nav-ass {
-    background: white;
-    font-family: 'Poppins', sans-serif;
+  background: white;
+  font-family: 'Poppins', sans-serif;
 }
 .navbar-logo-ass img {
-    width: auto;
-    padding: 0 20px;
+  width: auto;
+  padding: 0 20px;
 }
 .btn-ass {
-    color: #AE4926;
-    border-color: rgba(0, 0, 0, 0.1);
+  color: #ae4926;
+  border-color: rgba(0, 0, 0, 0.1);
 }
 .footer-ass {
-    text-align: center;
-    /* position: absolute; */
-    /* bottom: 0; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: white;
-    width: 100%;
-    height: 100px;
-    padding: 20px 0;
+  text-align: center;
+  /* position: absolute; */
+  /* bottom: 0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  width: 100%;
+  height: 100px;
+  padding: 20px 0;
 }
-body,
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+main,
+.toast-msg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .jsgrid-header-row > .jsgrid-header-cell {
-background: #AE4926;
-color: white;    
+  background: #ae4926;
+  color: white;
 }
 
 .jsgrid-insert-row > .jsgrid-cell {
-    background: #ffc2aeba;
+  background: #ffc2aeba;
 }

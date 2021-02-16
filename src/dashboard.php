@@ -16,19 +16,28 @@ if (isset($_GET['success'])) {
 require("../assets/html/header.html");
 
 ?>
-<?= isset($message) ? "
+<section class="toast-msg">
+  <?= isset($message) ? "
 <div class='toast' role='alert' aria-live='assertive' aria-atomic='true'>
   <div class='toast-body'>
     $message
   </div>
 </div>" : "" ?>
+</section>
 
 <main id="main-wrapper">
 </main>
 
 <?php require("../assets/html/footer.html"); ?>
 
+
 <script src="../assets/js/index.js" type="module"></script>
+<script>
+  $(".toast").toast({
+    delay: 3000
+  });
+  $(".toast").toast('show');
+</script>
 </body>
 
 </html>
