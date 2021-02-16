@@ -16,7 +16,23 @@ export const helpers = {
       data: employeeList,
 
       onItemDeleting: function (args) {
-        deleteMethod.url('../src/library/employeeController.php', args.item.id);
+        deleteMethod
+        .url('../src/library/employeeController.php', args.item.id)
+        .done(() => {
+          $('.toast-msg').html(`
+              <div class='toast' role='alert' aria-live='assertive' aria-atomic='true'>
+                <div class='toast-body'>
+                  Employee deleted correctly
+                </div>
+              </div>
+              
+              <script>
+                $(".toast").toast({
+                delay: 3000
+                });
+                $(".toast").toast('show');
+              </script>`);
+        });
       },
       onItemInserting: function (args) {
         postMethod
@@ -25,11 +41,39 @@ export const helpers = {
                 args.item.id = data;
                 args.item.lastName = '';
                 args.item.gender = '';
-                });
+                $('.toast-msg').html(`
+                <div class='toast' role='alert' aria-live='assertive' aria-atomic='true'>
+                  <div class='toast-body'>
+                    Employee created correctly
+                  </div>
+                </div>
+                
+                <script>
+                  $(".toast").toast({
+                  delay: 3000
+                  });
+                  $(".toast").toast('show');
+                </script>`);
+          });
       },
       onItemUpdating: function (args) {
         putMethod
           .url('../src/library/employeeController.php', args.item)
+          .done(() => {
+            $('.toast-msg').html(`
+                <div class='toast' role='alert' aria-live='assertive' aria-atomic='true'>
+                  <div class='toast-body'>
+                    Employee updated correctly
+                  </div>
+                </div>
+                
+                <script>
+                  $(".toast").toast({
+                  delay: 3000
+                  });
+                  $(".toast").toast('show');
+                </script>`);
+          });
       },
       rowClick: function (args) {
         window.location.href = `employee.php?employeeId=${args.item.id}`;
