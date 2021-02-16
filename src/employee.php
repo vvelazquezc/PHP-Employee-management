@@ -12,12 +12,6 @@ require("./library/employeeController.php");
 
 require("../assets/html/header.html");
 ?>
-<?= isset($message) ? "
-<div class='toast' role='alert' aria-live='assertive' aria-atomic='true'>
-  <div class='toast-body'>
-    $message
-  </div>
-</div>" : "" ?>
 <section id="form-wrapper">
   <div class="container overflow-hidden">
     <form class="needs-validation" action="./library/employeeController.php" method="POST">

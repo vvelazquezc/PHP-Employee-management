@@ -9,17 +9,21 @@ if (isset($_SESSION["id"])) {
   exit();
 }
 
+if (isset($_GET['success'])) {
+  $message = $_GET['success'];
+}
+
 require("../assets/html/header.html");
 
 ?>
-
-<main id="main-wrapper">
 <?= isset($message) ? "
 <div class='toast' role='alert' aria-live='assertive' aria-atomic='true'>
   <div class='toast-body'>
     $message
   </div>
 </div>" : "" ?>
+
+<main id="main-wrapper">
 </main>
 
 <?php require("../assets/html/footer.html"); ?>

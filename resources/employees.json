@@ -47,13 +47,13 @@
         "lastName": "Desmond",
         "email": "dismond@foo.com",
         "gender": "man",
-        "age": 30,
+        "age": "30",
         "streetAddress": "90",
         "city": "Salt lake city",
         "state": "UT",
         "PC": "457320",
         "phoneNumber": "90876987654",
-        "avatar": "..\/assets\/images\/no-user.png"
+        "avatar": "https:\/\/images.pexels.com\/photos\/736716\/pexels-photo-736716.jpeg?auto=compress&cs=tinysrgb&crop=faces&fit=crop&h=200&w=200"
     },
     {
         "id": "5",

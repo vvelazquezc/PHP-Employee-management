@@ -25,7 +25,7 @@
     height: 100px;
     padding: 20px 0;
 }
-
+body,
 main {
     display: flex;
     flex-direction: column;
