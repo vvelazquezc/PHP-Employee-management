@@ -7,18 +7,20 @@
 .label-avatar {
     width: 75px;
     height: 75px;
-    margin: -20px 20px 20px;
+    margin: -20px 20px 40px;
 }
 
 .img_profile {
     width: 200px;
+    display:block;
+    margin:auto;
     margin-bottom: 20px;
 }
 
 .container_avatar {
     min-height: 150px;
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     margin-left: -40px;
@@ -41,7 +43,7 @@ input[type=radio] + img {
 input[type=radio]:hover + img,
 input[type=radio]:checked + img {
   outline: 2px solid #495057;
-  transform: scale(1.5,1.5);
+  transform: scale(1.2,1.2);
 }
 
 

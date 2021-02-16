@@ -15,10 +15,10 @@ require("../assets/html/header.html");
 <section id="form-wrapper">
   <div class="container overflow-hidden">
     <form class="needs-validation" action="./library/employeeController.php" method="POST">
+    <img src="<?= isset($employee) ? $employee['avatar'] : "../assets/images/no-user.png" ?>" class="img_profile" alt="avatar">
     <div class="container_avatar">
       <?php require("./imageGallery.php"); ?>
     </div>
-    <img src="<?= isset($employee) ? $employee['avatar'] : "../assets/images/no-user.png" ?>" class="img_profile" alt="avatar">
     <h4 class="mb-3"><?= isset($employee) ? $employee['name'] . "'s profile" : "New employee" ?></h4>
     <input type="hidden" name="_method" value="<?= isset($employee) ? "PUT" : "POST" ?>">
       <div class="row">
@@ -38,7 +38,8 @@ require("../assets/html/header.html");
         <div class="col-sm-6 p-2">
           <label for="uEmail" class="form-label">Email</label>
           <input type="email" class="form-control" id="uEmail" name="email" value="<?= isset($employee) ? $employee['email'] : '' ?>" required="">
-
+        </div>
+        <div class="col-sm-6 p-2">
           <label for="uGender" class="form-label">Gender</label><br>
           <select class="form-control" id="uGender" name="gender" required>
             <option value="man" <?= isset($employee) ? ($employee['gender'] == "man" ? "selected" : "") : '' ?>>Man</option>
@@ -48,18 +49,19 @@ require("../assets/html/header.html");
         </div>
 
         <div class="col-md-6 p-2">
-          <label for="uCity" class="form-label">City</label>
-          <input type="text" class="form-control" id="uCity" name="city" value="<?= isset($employee) ? $employee['city'] : '' ?>">
-        </div>
-
-        <div class="col-md-6 p-2">
           <label for="uAddress" class="form-label">Street Address</label>
           <input type="text" class="form-control" id="uAddress" name="streetAddress" required value="<?= isset($employee) ? $employee['streetAddress'] : '' ?>">
         </div>
 
-        <div class="col-md-6 p-2">
+        <div class="col-sm-6 p-2">
           <label for="uState" class="form-label">State</label>
           <input type="text" class="form-control" id="uState" name="state" value="<?= isset($employee) ? $employee['state'] : '' ?>">
+        </div>
+
+
+        <div class="col-sm-6 p-2">
+          <label for="uCity" class="form-label">City</label>
+          <input type="text" class="form-control" id="uCity" name="city" value="<?= isset($employee) ? $employee['city'] : '' ?>">
         </div>
 
         <div class="col-md-6 p-2">
@@ -67,12 +69,12 @@ require("../assets/html/header.html");
           <input type="number" class="form-control" id="uAge" name="age" required value="<?= isset($employee) ? $employee['age'] : '' ?>">
         </div>
 
-        <div class="col-md-6 p-2">
+        <div class="col-sm-6 p-2">
           <label for="uPC" class="form-label">Postal Code</label>
           <input type="number" class="form-control" id="uPC" name="PC" required value="<?= isset($employee) ? $employee['PC'] : '' ?>">
         </div>
 
-        <div class="col-md-6 p-2">
+        <div class="col-sm-6 p-2">
           <label for="uPhoneNumber" class="form-label">Phone Number</label>
           <input type="number" class="form-control" id="uPhoneNumber" name="phoneNumber" required value="<?= isset($employee) ? $employee['phoneNumber'] : '' ?>">
         </div>
