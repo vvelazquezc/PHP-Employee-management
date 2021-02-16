@@ -4,100 +4,58 @@ _This proyect is a aproximation to a employye manager from a company_
 
 ## Starting 🚀
 
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
-
-Mira **Deployment** para conocer como desplegar el proyecto.
-
-### Pre-requisitos 📋
-
-_Que cosas necesitas para instalar el software y como instalarlas_
+_First you need to have a local copy of the repository, for this you have to do is start your IDE and in the console copy the next command:_
 
 ```
-Da un ejemplo
+git clone https://github.com/vvelazquezc/PHP-Employee-management.git
 ```
 
-### Instalación 🔧
+### Requirements 📋
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
+_First you need to have installed xampp in your local and put your clone of the project on htdocs folder of xampp_
 
-_Dí cómo será ese paso_
-
-```
-Da un ejemplo
-```
-
-_Y repite_
+_Then you need to have installed npm and node in your local, you can install it with the next commands in you console_
 
 ```
-hasta finalizar
+sudo apt update
+sudo apt install nodejs
+sudo apt install npm
 ```
 
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
-
-## Ejecutando las pruebas ⚙️
-
-_Explica como ejecutar las pruebas automatizadas para este sistema_
-
-### Analice las pruebas end-to-end 🔩
-
-_Explica que verifican estas pruebas y por qué_
+_Then you need to install all the project dependencies, for this, in the path of the clone proyect you need to paste the next command:_
 
 ```
-Da un ejemplo
+npm install.
 ```
 
-### Y las pruebas de estilo de codificación ⌨️
+## Desploy 📦
 
-_Explica que verifican estas pruebas y por qué_
+_Once you have installed all the necesaries, you should to start xampp server and go in your browser to your localhost and navigate to your local path to see the project_
 
-```
-Da un ejemplo
-```
+## Build with 🛠️
 
-## Despliegue 📦
+- [jsGrid](http://js-grid.com/)
+- [bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+- [jQuery](https://jquery.com/)
 
-_Agrega notas adicionales sobre como hacer deploy_
+## Contributing 🖇️
 
-## Construido con 🛠️
+For contributions, please fork the project, change whatever you want and create a pull request with the new content.
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
+## Authors ✒️
 
-- [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-- [Maven](https://maven.apache.org/) - Manejador de dependencias
-- [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
+- **Irati Arrieta** - [iarrieta90](https://github.com/iarrieta90)
+- **Verónica Velázquez** - [vvelazquezc](https://github.com/vvelazquezc)
+- **Raúl Cátedra** - [raulcatedra3003](https://github.com/RaulCatedra3003)
 
-## Contribuyendo 🖇️
+## License 📄
 
-Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
+This project is under GNU license
 
-## Wiki 📖
+## Thansk 🎁
 
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)
-
-## Versionado 📌
-
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
-
-## Autores ✒️
-
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
-
-- **Andrés Villanueva** - _Trabajo Inicial_ - [villanuevand](https://github.com/villanuevand)
-- **Fulanito Detal** - _Documentación_ - [fulanitodetal](#fulanito-de-tal)
-
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto.
-
-## Licencia 📄
-
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
-
-## Expresiones de Gratitud 🎁
-
-- Comenta a otros sobre este proyecto 📢
-- Invita una cerveza 🍺 o un café ☕ a alguien del equipo.
-- Da las gracias públicamente 🤓.
-- etc.
+- Thanks to our classmates specially to Jose Serralvo and Miguel García for they understanding of this project and they explanations to us.
 
 ---
 
-⌨️ con ❤️ por [Villanuevand](https://github.com/Villanuevand) 😊
+⌨️ with ❤️ Irati Arrieta, Verónica Velázquez and Raúl Cátedra.
