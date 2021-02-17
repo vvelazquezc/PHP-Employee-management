@@ -4,7 +4,7 @@ _This project is an approach to an employee manager system for a company_
 
 ## Starting 🚀
 
-_First you need to have a local copy of the repository, for this you have to start your IDE and in the console copy the next command:_
+_First you need to make a local copy of the repository, for this you have to start your IDE and in the console copy the next command:_
 
 ```
 git clone https://github.com/vvelazquezc/PHP-Employee-management.git
